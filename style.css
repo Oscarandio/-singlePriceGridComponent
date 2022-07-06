@@ -1,0 +1,150 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.cards {
+  max-width: 280px;
+}
+
+.card_one,
+.card_two,
+.card_three {
+  padding: 10px 20px 24px 20px;
+}
+
+.card_one {
+  background-color: white;
+  border-radius: 6px 6px 0 0;
+}
+
+.card_one h1 {
+  font-size: 1.25rem;
+  color: hsl(179, 62%, 43%);
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.description {
+  font-size: 0.75rem;
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6;
+}
+
+.card_two {
+  background-color: hsl(179, 62%, 43%);
+}
+
+h2 {
+  font-size: 1rem;
+  color: hsl(204, 43%, 93%);
+}
+
+.price {
+  display: flex;
+}
+
+.price p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+  margin: 0 6px 0 0;
+}
+
+.price p:nth-of-type(2) {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(204, 43%, 93%, 35%);
+  margin-top: 8px;
+}
+
+.card_two > p {
+  font-size: 0.9rem;
+  color: hsl(204, 43%, 93%);
+}
+
+button {
+  margin-top: 10px;
+  border: none;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 6px;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: hsl(71, 68%, 36%);
+}
+
+.card_three {
+  background-color: hsl(179, 62%, 43%, 75%);
+  border-radius: 0 0 6px 6px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 0.8rem;
+  color: hsl(204, 43%, 93%, 70%);
+  line-height: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    max-width: 700px;
+  }
+  .card_one,
+  .card_two,
+  .card_three {
+    padding: 35px;
+  }
+  .card_one h1 {
+    font-size: 1.75rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .description {
+    font-size: 1.15rem;
+  }
+  .desktop_cards {
+    display: flex;
+  }
+  .card_two {
+    width: 50%;
+    border-bottom-left-radius: 6px;
+  }
+  .card_three {
+    width: 50%;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 0;
+
+  }
+}
+
+/* ## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%) */
